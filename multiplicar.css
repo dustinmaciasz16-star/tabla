@@ -1,0 +1,85 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* FONDO TECNOLÓGICO */
+body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background: radial-gradient(circle at top, #0f2027, #203a43, #2c5364);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: white;
+}
+
+/* CONTENEDOR */
+.contenedor {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 25px;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 20px rgba(0,255,255,0.3);
+}
+
+/* BOTÓN */
+.btn-probar {
+    background: linear-gradient(45deg, #00f2fe, #4facfe);
+    color: black;
+    border: none;
+    padding: 12px 20px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-probar:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #00f2fe;
+}
+
+/* TÍTULO */
+h1 {
+    margin-bottom: 15px;
+    text-shadow: 0 0 10px #00f2fe;
+}
+
+/* TABLA */
+.tabla .fila {
+    padding: 10px;
+    margin: 6px 0;
+    background: rgba(255,255,255,0.1);
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.tabla .fila:hover {
+    background: rgba(0,255,255,0.2);
+    transform: translateX(5px);
+}
+
+/* FOOTER */
+footer {
+    margin-top: 15px;
+    font-size: 0.9em;
+    opacity: 0.7;
+}
+
+/* RESPONSIVE */
+@media (max-width: 500px) {
+    .contenedor {
+        padding: 15px;
+    }
+
+    .btn-probar {
+        width: 100%;
+    }
+}
