@@ -3,27 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabla del 3</title>
+    <title>Generador de Tablas</title>
     <link rel="stylesheet" href="multiplicar.css">
+    <link rel="stylesheet" href="fondo.css">
 </head>
 <body>
 
     <div class="contenedor">
 
+        <h1>⚡ Generador de Tablas</h1>
+
+        <p class="instruccion">
+            Escribe un número y presiona <strong>PROBAR</strong> para ver su tabla de multiplicar.
+        </p>
+        <br>
+        <div class="input-group">
+            <input type="number" id="numero" placeholder="Ej: 3, 5, 7..." min="1">
+        </div>
+
         <button id="btn1" class="btn-probar">PROBAR</button>
 
-        <h1>⚡ Tabla del 3</h1>
+        <p id="mensaje" class="mensaje"></p>
 
-        <div id="tabla" class="tabla">
-            <div class="fila"></div>
- 
-        </div>
+        <div id="tabla" class="tabla"></div>
 
         <footer>
             <p>Creado por: Dustin 🚀</p>
         </footer>
 
     </div>
+    <script src="fondo.js"></script>
     <script src="multiplicar.js"></script>
 </body>
 </html>
